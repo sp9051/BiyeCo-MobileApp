@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
-import BackButton from './BackButton';
-import TabButton from './TabButton';
-import InputField from './InputField';
-import PasswordInput from './PasswordInput';
-import ActionButton from './ActionButton';
-import EmailIcon from './EmailIcon';
+import BackButton from '../components/BackButton';
+import TabButton from '../components/TabButton';
+import InputField from '../components/InputField';
+import PasswordInput from '../components/PasswordInput';
+import ActionButton from '../components/ActionButton';
+import EmailIcon from '../components/EmailIcon';
 
 const LoginForm = () => {
     const [activeTab, setActiveTab] = useState('login');
@@ -80,7 +80,7 @@ const LoginForm = () => {
                 {/* Form Content */}
                 <View
                     style={styles.formContainer}
-                    accessibilityRole="form"
+                // accessibilityRole="form"
                 >
                     {/* Email Input */}
                     <InputField

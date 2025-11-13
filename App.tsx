@@ -56,6 +56,12 @@ import WelcomeScreen from './src/components/welcome/WelcomeScreen';
 import LandingScreen from './src/components/welcome/LandingScreen';
 import SplashScreen from './src/screens/SplashScreen';
 import BasicDetailsForm from './src/screens/profile-creation/basicdt/BasicDetailsForm';
+import ContactDetailsForm from './src/screens/profile-creation/contactdt/ContactDetailsForm';
+import AboutMe from './src/screens/profile-creation/aboutme/AboutMe';
+import HomeScreen from './src/screens/home/HomeScreen';
+
+
+
 
 
 
@@ -68,7 +74,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="SplashScreen"
+        initialRouteName="HomeScreen"
         screenOptions={{ headerShown: false }}
       >
         {/* <Stack.Screen name="Example" component={Example} /> */}
@@ -81,6 +87,15 @@ const App = () => {
 
         <Stack.Screen name="InputDesign" component={InputDesign} />
         <Stack.Screen name="BasicDetailsForm" component={BasicDetailsForm} />
+        <Stack.Screen name="ContactDetailsForm" component={ContactDetailsForm} />
+        <Stack.Screen name="AboutMe" component={AboutMe} />
+
+
+
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+
+
+
 
 
         <Stack.Screen name="Login" component={LoginForm} />
